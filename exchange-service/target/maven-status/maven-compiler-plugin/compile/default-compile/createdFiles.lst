@@ -1,0 +1,8 @@
+com\julio\exchange_service\config\OpenApiConfiguration.class
+com\julio\exchange_service\model\Exchange.class
+com\julio\exchange_service\repository\ExchangeRepository.class
+com\julio\exchange_service\config\WebConfig.class
+com\julio\exchange_service\config\ZipkinCustomSenderConfig.class
+com\julio\exchange_service\environment\InstanceInformationService.class
+com\julio\exchange_service\controller\ExchangeController.class
+com\julio\exchange_service\ExchangeServiceApplication.class
