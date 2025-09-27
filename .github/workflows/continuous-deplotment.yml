@@ -27,5 +27,5 @@ jobs:
         distribution: 'adopt' # See 'Supported distributions' for available options
 
     - name: Buil Eureka Naming Server Docker Image
-      working-directory: ./Users/julio/OneDrive/Documentos/Java-Spring/microsservices/naming-server
+      working-directory: ./naming-server
       run: mv spring-boot:build-image -DskipTests
