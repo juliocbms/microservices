@@ -26,6 +26,22 @@ jobs:
         java-version: '21'
         distribution: 'adopt' # See 'Supported distributions' for available options
 
-    - name: Buil Eureka Naming Server Docker Image
+    - name: Build Eureka Naming Server Docker Image
       working-directory: ./naming-server
-      run: mvn spring-boot:build-image -DskipTests
+      run: mvn spring-boot:build-image
+
+    - name: Build API Gateway Docker Image
+      working-directory: ./api-gateway
+      run: mvn spring-boot:build-image
+
+    - name: Build Book Service Docker Image
+      working-directory: ./book-service
+      run: mvn clean package
+
+    - name: Build Exchange Service Docker Image
+      working-directory: ./exchange-service
+      run: mvn clean package
+
+    - name: Docker Compose Build
+      working-directory: ./docker-compose
+      run: docker compose build
