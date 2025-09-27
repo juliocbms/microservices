@@ -28,4 +28,4 @@ jobs:
 
     - name: Buil Eureka Naming Server Docker Image
       working-directory: ./naming-server
-      run: mv spring-boot:build-image -DskipTests
+      run: mvn spring-boot:build-image -DskipTests
